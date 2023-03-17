@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E5DF6A29C530E700175E5C /* KomodoPrice Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 02E5DF6929C530E700175E5C /* KomodoPrice Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02E5DF6F29C530E700175E5C /* KomodoPriceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E5DF6E29C530E700175E5C /* KomodoPriceApp.swift */; };
+		02E5DF7129C530E700175E5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E5DF7029C530E700175E5C /* ContentView.swift */; };
+		02E5DF7329C530E700175E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E5DF7229C530E700175E5C /* Assets.xcassets */; };
+		02E5DF7629C530E800175E5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E5DF7529C530E800175E5C /* Preview Assets.xcassets */; };
+		02E5DF8029C530E800175E5C /* KomodoPrice_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E5DF7F29C530E800175E5C /* KomodoPrice_Watch_AppTests.swift */; };
+		02E5DF8A29C530E800175E5C /* KomodoPrice_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E5DF8929C530E800175E5C /* KomodoPrice_Watch_AppUITests.swift */; };
+		02E5DF8C29C530E800175E5C /* KomodoPrice_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E5DF8B29C530E800175E5C /* KomodoPrice_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02E5DF6B29C530E700175E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02E5DF5D29C530E600175E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E5DF6829C530E700175E5C;
+			remoteInfo = "KomodoPrice Watch App";
+		};
+		02E5DF7C29C530E800175E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02E5DF5D29C530E600175E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E5DF6829C530E700175E5C;
+			remoteInfo = "KomodoPrice Watch App";
+		};
+		02E5DF8629C530E800175E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02E5DF5D29C530E600175E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E5DF6829C530E700175E5C;
+			remoteInfo = "KomodoPrice Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02E5DF9229C530E800175E5C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				02E5DF6A29C530E700175E5C /* KomodoPrice Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02E5DF6329C530E700175E5C /* KomodoPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KomodoPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E5DF6929C530E700175E5C /* KomodoPrice Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KomodoPrice Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E5DF6E29C530E700175E5C /* KomodoPriceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KomodoPriceApp.swift; sourceTree = "<group>"; };
+		02E5DF7029C530E700175E5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02E5DF7229C530E700175E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02E5DF7529C530E800175E5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02E5DF7B29C530E800175E5C /* KomodoPrice Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KomodoPrice Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E5DF7F29C530E800175E5C /* KomodoPrice_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KomodoPrice_Watch_AppTests.swift; sourceTree = "<group>"; };
+		02E5DF8529C530E800175E5C /* KomodoPrice Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KomodoPrice Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E5DF8929C530E800175E5C /* KomodoPrice_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KomodoPrice_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		02E5DF8B29C530E800175E5C /* KomodoPrice_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KomodoPrice_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02E5DF6629C530E700175E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E5DF7829C530E800175E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E5DF8229C530E800175E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E5DF5C29C530E600175E5C = {
+			isa = PBXGroup;
+			children = (
+				02E5DF6D29C530E700175E5C /* KomodoPrice Watch App */,
+				02E5DF7E29C530E800175E5C /* KomodoPrice Watch AppTests */,
+				02E5DF8829C530E800175E5C /* KomodoPrice Watch AppUITests */,
+				02E5DF6429C530E700175E5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02E5DF6429C530E700175E5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02E5DF6329C530E700175E5C /* KomodoPrice.app */,
+				02E5DF6929C530E700175E5C /* KomodoPrice Watch App.app */,
+				02E5DF7B29C530E800175E5C /* KomodoPrice Watch AppTests.xctest */,
+				02E5DF8529C530E800175E5C /* KomodoPrice Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02E5DF6D29C530E700175E5C /* KomodoPrice Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				02E5DF6E29C530E700175E5C /* KomodoPriceApp.swift */,
+				02E5DF7029C530E700175E5C /* ContentView.swift */,
+				02E5DF7229C530E700175E5C /* Assets.xcassets */,
+				02E5DF7429C530E800175E5C /* Preview Content */,
+			);
+			path = "KomodoPrice Watch App";
+			sourceTree = "<group>";
+		};
+		02E5DF7429C530E800175E5C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				02E5DF7529C530E800175E5C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02E5DF7E29C530E800175E5C /* KomodoPrice Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				02E5DF7F29C530E800175E5C /* KomodoPrice_Watch_AppTests.swift */,
+			);
+			path = "KomodoPrice Watch AppTests";
+			sourceTree = "<group>";
+		};
+		02E5DF8829C530E800175E5C /* KomodoPrice Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02E5DF8929C530E800175E5C /* KomodoPrice_Watch_AppUITests.swift */,
+				02E5DF8B29C530E800175E5C /* KomodoPrice_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "KomodoPrice Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02E5DF6229C530E700175E5C /* KomodoPrice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E5DF9329C530E800175E5C /* Build configuration list for PBXNativeTarget "KomodoPrice" */;
+			buildPhases = (
+				02E5DF6129C530E700175E5C /* Resources */,
+				02E5DF9229C530E800175E5C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02E5DF6C29C530E700175E5C /* PBXTargetDependency */,
+			);
+			name = KomodoPrice;
+			productName = KomodoPrice;
+			productReference = 02E5DF6329C530E700175E5C /* KomodoPrice.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		02E5DF6829C530E700175E5C /* KomodoPrice Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E5DF8F29C530E800175E5C /* Build configuration list for PBXNativeTarget "KomodoPrice Watch App" */;
+			buildPhases = (
+				02E5DF6529C530E700175E5C /* Sources */,
+				02E5DF6629C530E700175E5C /* Frameworks */,
+				02E5DF6729C530E700175E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KomodoPrice Watch App";
+			productName = "KomodoPrice Watch App";
+			productReference = 02E5DF6929C530E700175E5C /* KomodoPrice Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02E5DF7A29C530E800175E5C /* KomodoPrice Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E5DF9629C530E800175E5C /* Build configuration list for PBXNativeTarget "KomodoPrice Watch AppTests" */;
+			buildPhases = (
+				02E5DF7729C530E800175E5C /* Sources */,
+				02E5DF7829C530E800175E5C /* Frameworks */,
+				02E5DF7929C530E800175E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02E5DF7D29C530E800175E5C /* PBXTargetDependency */,
+			);
+			name = "KomodoPrice Watch AppTests";
+			productName = "KomodoPrice Watch AppTests";
+			productReference = 02E5DF7B29C530E800175E5C /* KomodoPrice Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02E5DF8429C530E800175E5C /* KomodoPrice Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E5DF9929C530E800175E5C /* Build configuration list for PBXNativeTarget "KomodoPrice Watch AppUITests" */;
+			buildPhases = (
+				02E5DF8129C530E800175E5C /* Sources */,
+				02E5DF8229C530E800175E5C /* Frameworks */,
+				02E5DF8329C530E800175E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02E5DF8729C530E800175E5C /* PBXTargetDependency */,
+			);
+			name = "KomodoPrice Watch AppUITests";
+			productName = "KomodoPrice Watch AppUITests";
+			productReference = 02E5DF8529C530E800175E5C /* KomodoPrice Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02E5DF5D29C530E600175E5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					02E5DF6229C530E700175E5C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					02E5DF6829C530E700175E5C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					02E5DF7A29C530E800175E5C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 02E5DF6829C530E700175E5C;
+					};
+					02E5DF8429C530E800175E5C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 02E5DF6829C530E700175E5C;
+					};
+				};
+			};
+			buildConfigurationList = 02E5DF6029C530E600175E5C /* Build configuration list for PBXProject "KomodoPrice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02E5DF5C29C530E600175E5C;
+			productRefGroup = 02E5DF6429C530E700175E5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02E5DF6229C530E700175E5C /* KomodoPrice */,
+				02E5DF6829C530E700175E5C /* KomodoPrice Watch App */,
+				02E5DF7A29C530E800175E5C /* KomodoPrice Watch AppTests */,
+				02E5DF8429C530E800175E5C /* KomodoPrice Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02E5DF6129C530E700175E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E5DF6729C530E700175E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E5DF7629C530E800175E5C /* Preview Assets.xcassets in Resources */,
+				02E5DF7329C530E700175E5C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E5DF7929C530E800175E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E5DF8329C530E800175E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02E5DF6529C530E700175E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E5DF7129C530E700175E5C /* ContentView.swift in Sources */,
+				02E5DF6F29C530E700175E5C /* KomodoPriceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E5DF7729C530E800175E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E5DF8029C530E800175E5C /* KomodoPrice_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E5DF8129C530E800175E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E5DF8A29C530E800175E5C /* KomodoPrice_Watch_AppUITests.swift in Sources */,
+				02E5DF8C29C530E800175E5C /* KomodoPrice_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02E5DF6C29C530E700175E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02E5DF6829C530E700175E5C /* KomodoPrice Watch App */;
+			targetProxy = 02E5DF6B29C530E700175E5C /* PBXContainerItemProxy */;
+		};
+		02E5DF7D29C530E800175E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02E5DF6829C530E700175E5C /* KomodoPrice Watch App */;
+			targetProxy = 02E5DF7C29C530E800175E5C /* PBXContainerItemProxy */;
+		};
+		02E5DF8729C530E800175E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02E5DF6829C530E700175E5C /* KomodoPrice Watch App */;
+			targetProxy = 02E5DF8629C530E800175E5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02E5DF8D29C530E800175E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02E5DF8E29C530E800175E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		02E5DF9029C530E800175E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KomodoPrice Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KomodoPrice;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AtomicBV.KomodoPrice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		02E5DF9129C530E800175E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KomodoPrice Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KomodoPrice;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AtomicBV.KomodoPrice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		02E5DF9429C530E800175E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = KomodoPrice;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AtomicBV.KomodoPrice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		02E5DF9529C530E800175E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = KomodoPrice;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AtomicBV.KomodoPrice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02E5DF9729C530E800175E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AtomicBV.KomodoPrice-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KomodoPrice Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KomodoPrice Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		02E5DF9829C530E800175E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AtomicBV.KomodoPrice-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KomodoPrice Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KomodoPrice Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		02E5DF9A29C530E800175E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AtomicBV.KomodoPrice-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "KomodoPrice Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		02E5DF9B29C530E800175E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AtomicBV.KomodoPrice-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "KomodoPrice Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02E5DF6029C530E600175E5C /* Build configuration list for PBXProject "KomodoPrice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E5DF8D29C530E800175E5C /* Debug */,
+				02E5DF8E29C530E800175E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E5DF8F29C530E800175E5C /* Build configuration list for PBXNativeTarget "KomodoPrice Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E5DF9029C530E800175E5C /* Debug */,
+				02E5DF9129C530E800175E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E5DF9329C530E800175E5C /* Build configuration list for PBXNativeTarget "KomodoPrice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E5DF9429C530E800175E5C /* Debug */,
+				02E5DF9529C530E800175E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E5DF9629C530E800175E5C /* Build configuration list for PBXNativeTarget "KomodoPrice Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E5DF9729C530E800175E5C /* Debug */,
+				02E5DF9829C530E800175E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E5DF9929C530E800175E5C /* Build configuration list for PBXNativeTarget "KomodoPrice Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E5DF9A29C530E800175E5C /* Debug */,
+				02E5DF9B29C530E800175E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02E5DF5D29C530E600175E5C /* Project object */;
+}

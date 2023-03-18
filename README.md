@@ -10,7 +10,7 @@ A simple SwiftUI app that fetches and displays the current Komodo (KMD) price in
 - Fetches KMD price from two different API endpoints
 - Calculates and displays the average KMD price
 - Automatically updates the price every 60 seconds
-- Basic user interface to showcase the current KMD price
+- Basic user interface to showcase the current KMD price and 24h change
 
 ## Requirements
 

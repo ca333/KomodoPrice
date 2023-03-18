@@ -26,11 +26,30 @@ struct KMDPrice: Codable {
     let usd: Double
 }
 
+struct KomodoLivePrice: Codable {
+    let KMD: Ticker
+
+    struct Ticker: Codable {
+        let ticker: String
+        let last_price: String
+    }
+}
+
 class PriceFetcher: ObservableObject {
     @Published var price: Double = 0.0
     private var cancellable: AnyCancellable?
+    private var timerCancellable: AnyCancellable?
 
     private let url = URL(string: "https://api.coingecko.com/api/v3/simple/price?ids=komodo&vs_currencies=usd")!
+
+    init() {
+        fetchPrice()
+        timerCancellable = Timer.publish(every: 5, on: .main, in: .common)
+            .autoconnect()
+            .sink { [weak self] _ in
+                self?.fetchPrice()
+            }
+    }
 
     func fetchPrice() {
         cancellable = URLSession.shared.dataTaskPublisher(for: url)
@@ -48,7 +67,12 @@ class PriceFetcher: ObservableObject {
                 self?.price = coin.komodo.usd
             })
     }
+
+    deinit {
+        timerCancellable?.cancel()
+    }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

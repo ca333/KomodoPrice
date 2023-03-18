@@ -1,6 +1,8 @@
 import SwiftUI
 import Combine
 
+import SwiftUI
+
 struct ContentView: View {
     @StateObject private var priceFetcher = PriceFetcher()
 
@@ -9,9 +11,34 @@ struct ContentView: View {
             Text("KMD Price:")
                 .font(.largeTitle)
                 .padding(.bottom, 20)
-            Text("$\(priceFetcher.price, specifier: "%.4f")")
-                .font(.system(size: 40))
-                .bold()
+            
+            if let averagePrice = priceFetcher.averagePrice, let percentageChange = priceFetcher.percentageChange {
+                HStack {
+                    Text("$\(averagePrice, specifier: "%.4f")")
+                        .font(.system(size: 40))
+                        .fontWeight(.bold)
+
+                    VStack {
+                        if percentageChange >= 0 {
+                            Image(systemName: "arrow.up")
+                                .foregroundColor(Color.green)
+                        } else {
+                            Image(systemName: "arrow.down")
+                                .foregroundColor(Color.red)
+                        }
+
+                        Text("\(percentageChange, specifier: "%.2f")%")
+                            .font(.system(size: 15))
+                            .fontWeight(.bold)
+                            .foregroundColor(percentageChange >= 0 ? Color.green : Color.red)
+                    }
+                    .baselineOffset(80)
+                }
+            } else {
+                Text("Loading...")
+                    .font(.system(size: 40))
+                    .fontWeight(.bold)
+            }
         }
         .padding()
         .onAppear {
@@ -19,6 +46,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 struct Coin: Codable {
     let komodo: KMDPrice
@@ -34,11 +62,14 @@ struct KomodoLivePrice: Codable {
     struct Ticker: Codable {
         let ticker: String
         let last_price: String
+        let change_24h: String
     }
 }
 
 class PriceFetcher: ObservableObject {
     @Published var price: Double = 0.0
+    @Published var averagePrice: Double = 0.0
+    @Published var percentageChange: Double = 0.0
     private var cancellable1: AnyCancellable?
     private var cancellable2: AnyCancellable?
     private var timerCancellable: AnyCancellable?
@@ -83,8 +114,8 @@ class PriceFetcher: ObservableObject {
                     print("Error fetching KMD price from Komodo Live: \(error.localizedDescription)")
                 }
             }, receiveValue: { [weak self] komodoLivePrice in
-                if let price2 = Double(komodoLivePrice.KMD.last_price) {
-                    self?.updatePrice(price2: price2)
+                if let price2 = Double(komodoLivePrice.KMD.last_price), let change_24h = Double(komodoLivePrice.KMD.change_24h) {
+                    self?.updatePrice(price2: price2, change_24h: change_24h)
                 }
             })
     }
@@ -92,16 +123,19 @@ class PriceFetcher: ObservableObject {
     private var fetchedPrice1: Double?
     private var fetchedPrice2: Double?
 
-    private func updatePrice(price1: Double? = nil, price2: Double? = nil) {
+    private func updatePrice(price1: Double? = nil, price2: Double? = nil, change_24h: Double? = nil) {
         if let price1 = price1 {
             fetchedPrice1 = price1
         }
         if let price2 = price2 {
             fetchedPrice2 = price2
         }
+        if let change_24h = change_24h {
+            percentageChange = change_24h
+        }
 
         if let price1 = fetchedPrice1, let price2 = fetchedPrice2 {
-            price = (price1 + price2) / 2
+            averagePrice = (price1 + price2) / 2
         }
     }
 
@@ -109,7 +143,6 @@ class PriceFetcher: ObservableObject {
         timerCancellable?.cancel()
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

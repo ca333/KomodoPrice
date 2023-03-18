@@ -6,14 +6,16 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Text("KMD Price")
+            Text("KMD Price:")
                 .font(.largeTitle)
-            Text("\(priceFetcher.price, specifier: "%.5f") USD")
-                .font(.title)
-                .padding()
+                .padding(.bottom, 20)
+            Text("$\(priceFetcher.price, specifier: "%.4f")")
+                .font(.system(size: 40))
+                .bold()
         }
+        .padding()
         .onAppear {
-            priceFetcher.fetchPrice()
+            priceFetcher.fetchPrices()
         }
     }
 }
@@ -37,22 +39,24 @@ struct KomodoLivePrice: Codable {
 
 class PriceFetcher: ObservableObject {
     @Published var price: Double = 0.0
-    private var cancellable: AnyCancellable?
+    private var cancellable1: AnyCancellable?
+    private var cancellable2: AnyCancellable?
     private var timerCancellable: AnyCancellable?
 
-    private let url = URL(string: "https://api.coingecko.com/api/v3/simple/price?ids=komodo&vs_currencies=usd")!
+    private let url1 = URL(string: "https://api.coingecko.com/api/v3/simple/price?ids=komodo&vs_currencies=usd")!
+    private let url2 = URL(string: "https://prices.komodo.live:1313/api/v2/tickers?expire_at=600")!
 
     init() {
-        fetchPrice()
-        timerCancellable = Timer.publish(every: 5, on: .main, in: .common)
+        fetchPrices()
+        timerCancellable = Timer.publish(every: 60, on: .main, in: .common)
             .autoconnect()
             .sink { [weak self] _ in
-                self?.fetchPrice()
+                self?.fetchPrices()
             }
     }
 
-    func fetchPrice() {
-        cancellable = URLSession.shared.dataTaskPublisher(for: url)
+    func fetchPrices() {
+        cancellable1 = URLSession.shared.dataTaskPublisher(for: url1)
             .map { $0.data }
             .decode(type: Coin.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
@@ -61,11 +65,44 @@ class PriceFetcher: ObservableObject {
                 case .finished:
                     break
                 case .failure(let error):
-                    print("Error fetching KMD price: \(error.localizedDescription)")
+                    print("Error fetching KMD price from CoinGecko: \(error.localizedDescription)")
                 }
             }, receiveValue: { [weak self] coin in
-                self?.price = coin.komodo.usd
+                self?.updatePrice(price1: coin.komodo.usd)
             })
+
+        cancellable2 = URLSession.shared.dataTaskPublisher(for: url2)
+            .map { $0.data }
+            .decode(type: KomodoLivePrice.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print("Error fetching KMD price from Komodo Live: \(error.localizedDescription)")
+                }
+            }, receiveValue: { [weak self] komodoLivePrice in
+                if let price2 = Double(komodoLivePrice.KMD.last_price) {
+                    self?.updatePrice(price2: price2)
+                }
+            })
+    }
+
+    private var fetchedPrice1: Double?
+    private var fetchedPrice2: Double?
+
+    private func updatePrice(price1: Double? = nil, price2: Double? = nil) {
+        if let price1 = price1 {
+            fetchedPrice1 = price1
+        }
+        if let price2 = price2 {
+            fetchedPrice2 = price2
+        }
+
+        if let price1 = fetchedPrice1, let price2 = fetchedPrice2 {
+            price = (price1 + price2) / 2
+        }
     }
 
     deinit {

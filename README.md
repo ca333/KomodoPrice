@@ -1,5 +1,8 @@
 # SwiftUI KMD Price App
 
+<img width="422" alt="Screenshot 2023-03-18 at 09 29 08" src="https://user-images.githubusercontent.com/10762374/226094621-c72a1abc-2a03-4461-97e4-6dfcbb7e9a09.png">
+
+
 A simple SwiftUI app that fetches and displays the current Komodo (KMD) price in USD.
 
 ## Features
